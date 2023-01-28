@@ -5,13 +5,10 @@ struct FullView: View {
 
     var body: some View {
         ZStack {
-            Color.black
-
             Text(text)
                 .font(.system(size: 1000))
                 .minimumScaleFactor(0.01)
                 .padding(40)
-                .foregroundColor(.white)
 
             HStack {
                 VStack {
@@ -26,15 +23,6 @@ struct FullView: View {
                 Spacer()
             }
         }
-    }
-
-    @discardableResult
-    func openFullscreen(sender: Any?) -> NSWindow {
-        let controller = NSHostingController(rootView: self)
-        let window = NSWindow(contentViewController: controller)
-        window.contentViewController = controller
-        window.makeKeyAndOrderFront(sender)
-        window.toggleFullScreen(sender)
-        return window
+        .frame(minWidth: 1000, minHeight: 400)
     }
 }

@@ -1,10 +1,15 @@
 import SwiftUI
 
 struct MenuBarView: View {
+    var showFullView: () -> Void
+    var showSettings: () -> Void
+
     var body: some View {
         VStack {
-            Button("Show Fullview") {
-                FullView().openFullscreen(sender: self)
+            Button("Show Fullview", action: showFullView)
+            Button("Settings...", action: showSettings)
+            Button("Quit") {
+                exit(0)
             }
         }
         .padding()
@@ -13,6 +18,9 @@ struct MenuBarView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuBarView()
+        MenuBarView(
+            showFullView: {},
+            showSettings: {}
+        )
     }
 }

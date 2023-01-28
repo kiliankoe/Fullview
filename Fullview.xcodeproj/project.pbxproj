@@ -14,6 +14,7 @@
 		3955B3AA2984882C009AFF1D /* FullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955B3A92984882C009AFF1D /* FullView.swift */; };
 		3955B3B02984926C009AFF1D /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 3955B3AF2984926C009AFF1D /* KeyboardShortcuts */; };
 		3955B3B22984933D009AFF1D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955B3B12984933D009AFF1D /* SettingsView.swift */; };
+		3955B3B62985196A009AFF1D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3955B3B52985196A009AFF1D /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		3955B3A129846590009AFF1D /* Fullview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fullview.entitlements; sourceTree = "<group>"; };
 		3955B3A92984882C009AFF1D /* FullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullView.swift; sourceTree = "<group>"; };
 		3955B3B12984933D009AFF1D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3955B3B52985196A009AFF1D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,14 @@
 		3955B3972984658F009AFF1D /* Fullview */ = {
 			isa = PBXGroup;
 			children = (
+				3955B3B52985196A009AFF1D /* AppState.swift */,
 				3955B3982984658F009AFF1D /* FullviewApp.swift */,
 				3955B39A2984658F009AFF1D /* MenuBarView.swift */,
 				3955B3A92984882C009AFF1D /* FullView.swift */,
+				3955B3B12984933D009AFF1D /* SettingsView.swift */,
 				3955B39C29846590009AFF1D /* Assets.xcassets */,
 				3955B3A129846590009AFF1D /* Fullview.entitlements */,
 				3955B39E29846590009AFF1D /* Preview Content */,
-				3955B3B12984933D009AFF1D /* SettingsView.swift */,
 			);
 			path = Fullview;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3955B39B2984658F009AFF1D /* MenuBarView.swift in Sources */,
+				3955B3B62985196A009AFF1D /* AppState.swift in Sources */,
 				3955B3B22984933D009AFF1D /* SettingsView.swift in Sources */,
 				3955B3992984658F009AFF1D /* FullviewApp.swift in Sources */,
 				3955B3AA2984882C009AFF1D /* FullView.swift in Sources */,
