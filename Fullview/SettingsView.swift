@@ -7,10 +7,10 @@ struct SettingsView: View {
     var body: some View {
         Form {
             // TODO: Select light, dark or system color scheme
+            KeyboardShortcuts.Recorder("Open Fullview:", name: .openFullView)
             LabeledContent("Open new window in full screen:") {
                 Toggle("", isOn: $openFullscreen)
             }
-            KeyboardShortcuts.Recorder("Open Fullview:", name: .openFullView)
         }
         .padding()
     }

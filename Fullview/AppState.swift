@@ -29,6 +29,9 @@ final class AppState: ObservableObject {
         let controller = NSHostingController(rootView: view)
         let window = NSWindow(contentViewController: controller)
         window.title = "Fullview"
+        window.titlebarAppearsTransparent = true
+        window.toolbarStyle = .unified
+        window.titleVisibility = .hidden
         window.contentViewController = controller
         window.makeKeyAndOrderFront(self)
         if openNewWindowsInFullscreen {
